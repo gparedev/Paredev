@@ -1,3 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #030f0f;
+    --background-color-2: #03624c;
+    --letras-main: #00df82;
+}
+
+body {
+    background: linear-gradient(90deg, #030f0f -10%, #03624c) no-repeat fixed;
+    color: var(--letras-main);
+    font-family: "Orbitron", serif;
+}
+
+/* NAVBAR */
+
+header {
+    height: 30%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 0;
+}
+
+li {
+    font-size: 20px;
+    transition: 0.5s ease-in;
+}
+
+a {
+    text-decoration: none;
+    color: var(--letras-main);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contenedor-nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 70px;
+    text-align: center;
+    max-width: fit-content;
+    align-self: center;
+    justify-self: center;
+    transition: 0.5s ease-in-out;
+    margin-top: 60px;
+}
+
+header h1:hover {
+    font-size: 90px;
+    cursor: default;
+}
+
+/* ARTICLE */
+
+article {
+    margin-top: 90px;
+    height: 60%;
+}
+
+/* PROYECTOS */
+
+.proyectos-fila {
+    display: flex;
+}
+
+/* SOCIALS */
+
+.socials-fila-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.socials-fila-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.socials-columna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials img {
+    width: 60px;
+}
+
+.socials p {
+    color: white;
+    font-size: 30px;
+}
+
+.socials a {
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-final {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 950px) {
+
+    ul {
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 750px) {
+
+    ul {
+        gap: 10px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        position: fixed;
+        margin-top: 35px;
+        top: 0;
+        
+    }
+
+
 }
