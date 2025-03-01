@@ -10,16 +10,23 @@
 
 <body>
 
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="images/close.svg" alt="" height="26" width="26"></a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#proyectos">PROJECTS</a></li>
+            <li><a href="#conectar">CONNECT</a></li>
+        </ul>
+        <ul>
+            <li class="no-mobile"><a href="#about-me">ABOUT ME</a></li>
+            <li class="no-mobile"><a href="#proyectos">PROJECTS</a></li>
+            <li class="no-mobile"><a href="#conectar">CONNECT</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/menu.svg" alt="" height="26"
+                        width="26"></a></li>
+        </ul>
+    </nav>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="about-me.html">ABOUT ME</a></li>
-                <li>|</li>
-                <li><a href="#proyectos">PROJECTS</a></li>
-                <li>|</li>
-                <li><a href="#conectar">CONNECT</a></li>
-            </ul>
-        </nav>
         <section class="contenedor-nombre fila-header">
             <div class="columna-header">
                 <h1>Gustavo Paredes</h1>
@@ -30,7 +37,17 @@
         </section>
     </header>
 
+    <hr>
+
     <article>
+        <section>
+            <h2 id="about-me">About me</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus est deleniti eligendi, animi fugiat
+                commodi impedit laboriosam dolore odit et nemo in ex cumque, delectus eum temporibus quibusdam vitae,
+                ratione laudantium earum. In, vitae nisi perferendis aspernatur expedita officiis possimus sequi
+                tenetur! Excepturi itaque deserunt nam aliquam sed, soluta illum.</p>
+
+        </section>
         <h2 id="proyectos">Projects</h2>
         <section class="proyectos">
             <section>
@@ -101,11 +118,8 @@
         <section class="socials">
             <div class="socials-fila-1">
                 <div class="socials-fila-2">
-                    <h2>Connect:</h2>
-                </div>
-                <div class="socials-fila-2">
                     <div class="socials-columna">
-                        <img src="images/linkedin.svg" alt="">
+                        <a href="https://www.linkedin.com/in/paredev"><img src="images/linkedin.svg" alt=""></a>
                     </div>
                     <div class="socials-columna">
                         <p><a href="https://www.linkedin.com/in/paredev" target="_blank">LinkedIn</a></p>
@@ -123,6 +137,21 @@
         </section>
         <p class="footer-final">Gustavo | Software developer</p>
     </footer>
+
+    <a href="#"><button><img src="images/flecha-arriba.svg" alt=""></button></a>
+
+
+    <!-- scripts -->
+    <script>function showSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex"
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none"
+        }
+    </script>
 
 </body>
 
