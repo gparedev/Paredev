@@ -195,22 +195,6 @@ footer {
     text-align: center;
 }
 
-button {
-    position: fixed;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    background-color: var(--background-color2);
-    border: none;
-    box-shadow: -1px -1px 10px black;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-
-
 @media screen and (max-width: 800px) {
     .no-mobile {
         display: none;
@@ -311,12 +295,6 @@ button {
 
     .socials p {
         font-size: 30px;
-    }
-
-    button {
-        position: fixed;
-        bottom: 0;
-        right: 0;
     }
 
 }
